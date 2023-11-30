@@ -1,0 +1,191 @@
+{
+  "src/lib/components/Panel.js": {
+    "description": "",
+    "displayName": "Panel",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Updates the component's props."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "class name for the panel group"
+      },
+      "collapsedSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Panel should collapse to this size"
+      },
+      "collapsible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Panel should collapse when resized beyond its minSize"
+      },
+      "defaultSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Initial size of panel (numeric value between 1-100)"
+      },
+      "minSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Minimum size of panel (numeric value between 1-100)"
+      },
+      "maxSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Maximum size of panel (numeric value between 1-100)"
+      },
+      "order": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Order of panel within group; required for groups with conditionally rendered panels"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "style for the panel group"
+      }
+    }
+  },
+  "src/lib/components/PanelGroup.js": {
+    "description": "",
+    "displayName": "PanelGroup",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Updates the component's props."
+      },
+      "autoSaveId": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Unique id used to aut-save group arragement via local storage."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "class name for the panel group"
+      },
+      "direction": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Direction of the panel group"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "style for the panel group"
+      }
+    }
+  },
+  "src/lib/components/PanelResizeHandle.js": {
+    "description": "",
+    "displayName": "PanelResizeHandle",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component."
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Updates the component's props."
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "class name for the panel group"
+      },
+      "disable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Disable drag handle"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "style for the panel group"
+      }
+    }
+  }
+}

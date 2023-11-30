@@ -1,0 +1,11 @@
+include dash_resizable_panels/dash_resizable_panels.min.js
+include dash_resizable_panels/dash_resizable_panels.min.js.map
+include dash_resizable_panels/async-*.js
+include dash_resizable_panels/async-*.js.map
+include dash_resizable_panels/*-shared.js
+include dash_resizable_panels/*-shared.js.map
+include dash_resizable_panels/metadata.json
+include dash_resizable_panels/package-info.json
+include README.md
+include LICENSE
+include package.json
