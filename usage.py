@@ -11,16 +11,35 @@ app.layout = html.Div([
                 id='panel-1',
                 children=[
                     html.Div('Panel 1')
-                ]
+                ],
+                defaultSizePercentage=20,
+                minSizePercentage=10
             ),
-            PanelResizeHandle(html.Div(' ', style={"background-color": "red", "height": "100%", "width": "2px"})),
+            PanelResizeHandle(html.Div(' ', style={"backgroundColor": "grey", "height": "100%", "width": "5px"})),
             Panel(
                 id='panel-2',
                 children=[
-                    html.Div('Panel 2')
+                    PanelGroup(
+                        id='panel-group-2',
+                        children=[
+                            Panel(
+                                id='panel-2-1',
+                                children=[
+                                    html.Div('Panel 2-1')
+                                ]
+                            ),
+                            PanelResizeHandle(html.Div(' ', style={"backgroundColor": "grey", "width": "100%", "height": "5px"})),
+                            Panel(
+                                id='panel-2-2',
+                                children=[
+                                    html.Div('Panel 2-2')
+                                ]
+                            )
+                        ], direction='vertical'
+                    )
                 ]
             ),
-            PanelResizeHandle(),
+            PanelResizeHandle(html.Div(' ', style={"backgroundColor": "grey", "height": "100%", "width": "5px"})),
             Panel(
                 id='panel-3',
                 children=[
@@ -29,7 +48,7 @@ app.layout = html.Div([
             )
         ], direction='horizontal'
     )
-], style={'height': '100vh'})
+], style={"height": "100vh"})
 
 
 if __name__ == '__main__':

@@ -32,12 +32,19 @@
         "required": false,
         "description": "class name for the panel group"
       },
-      "collapsedSize": {
+      "collapsedSizePixels": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": "Panel should collapse to this size"
+        "description": "Panel should collapse to this size (in pixesl)"
+      },
+      "collapsedSizePercentage": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Panel should collapse to this size (in percentage)"
       },
       "collapsible": {
         "type": {
@@ -46,26 +53,47 @@
         "required": false,
         "description": "Panel should collapse when resized beyond its minSize"
       },
-      "defaultSize": {
+      "defaultSizePixels": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": "Initial size of panel (numeric value between 1-100)"
+        "description": "Initial size of panel (in pixels)"
       },
-      "minSize": {
+      "defaultSizePercentage": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": "Minimum size of panel (numeric value between 1-100)"
+        "description": "Initial size of panel (in percentage)"
       },
-      "maxSize": {
+      "minSizePixels": {
         "type": {
           "name": "number"
         },
         "required": false,
-        "description": "Maximum size of panel (numeric value between 1-100)"
+        "description": "Minimum size of panel (in pixels)"
+      },
+      "minSizePercentage": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Minimum size of panel (in percentage)"
+      },
+      "maxSizePixels": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Maximum size of panel (in pixels)"
+      },
+      "maxSizePercentage": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Maximum size of panel (in percentage)"
       },
       "order": {
         "type": {

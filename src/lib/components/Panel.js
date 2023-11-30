@@ -36,9 +36,14 @@ Panel.propTypes = {
     className: PropTypes.string,
 
     /**
-     * Panel should collapse to this size
+     * Panel should collapse to this size (in pixesl)
     */
-    collapsedSize: PropTypes.number,
+    collapsedSizePixels: PropTypes.number,
+
+    /**
+     * Panel should collapse to this size (in percentage)
+    */
+    collapsedSizePercentage: PropTypes.number,
 
     /**
      * Panel should collapse when resized beyond its minSize
@@ -46,19 +51,34 @@ Panel.propTypes = {
     collapsible: PropTypes.bool,
 
     /**
-     * Initial size of panel (numeric value between 1-100)
+     * Initial size of panel (in pixels)
     */
-    defaultSize: PropTypes.number,
+    defaultSizePixels: PropTypes.number,
 
     /**
-     * Minimum size of panel (numeric value between 1-100)
+     * Initial size of panel (in percentage)
     */
-    minSize: PropTypes.number,
+    defaultSizePercentage: PropTypes.number,
 
     /**
-     * Maximum size of panel (numeric value between 1-100)
+     * Minimum size of panel (in pixels)
     */
-    maxSize: PropTypes.number,
+    minSizePixels: PropTypes.number,
+
+    /**
+     * Minimum size of panel (in percentage)
+    */
+    minSizePercentage: PropTypes.number,
+
+    /**
+     * Maximum size of panel (in pixels)
+    */
+    maxSizePixels: PropTypes.number,
+
+    /**
+     * Maximum size of panel (in percentage)
+    */
+    maxSizePercentage: PropTypes.number,
 
     /**
      * Order of panel within group; required for groups with conditionally rendered panels

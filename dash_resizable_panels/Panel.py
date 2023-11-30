@@ -18,20 +18,32 @@ Keyword arguments:
 - className (string; optional):
     class name for the panel group.
 
-- collapsedSize (number; optional):
-    Panel should collapse to this size.
+- collapsedSizePercentage (number; optional):
+    Panel should collapse to this size (in percentage).
+
+- collapsedSizePixels (number; optional):
+    Panel should collapse to this size (in pixesl).
 
 - collapsible (boolean; optional):
     Panel should collapse when resized beyond its minSize.
 
-- defaultSize (number; optional):
-    Initial size of panel (numeric value between 1-100).
+- defaultSizePercentage (number; optional):
+    Initial size of panel (in percentage).
 
-- maxSize (number; optional):
-    Maximum size of panel (numeric value between 1-100).
+- defaultSizePixels (number; optional):
+    Initial size of panel (in pixels).
 
-- minSize (number; optional):
-    Minimum size of panel (numeric value between 1-100).
+- maxSizePercentage (number; optional):
+    Maximum size of panel (in percentage).
+
+- maxSizePixels (number; optional):
+    Maximum size of panel (in pixels).
+
+- minSizePercentage (number; optional):
+    Minimum size of panel (in percentage).
+
+- minSizePixels (number; optional):
+    Minimum size of panel (in pixels).
 
 - order (number; optional):
     Order of panel within group; required for groups with
@@ -44,10 +56,10 @@ Keyword arguments:
     _namespace = 'dash_resizable_panels'
     _type = 'Panel'
     @_explicitize_args
-    def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, collapsedSize=Component.UNDEFINED, collapsible=Component.UNDEFINED, defaultSize=Component.UNDEFINED, minSize=Component.UNDEFINED, maxSize=Component.UNDEFINED, order=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['children', 'id', 'className', 'collapsedSize', 'collapsible', 'defaultSize', 'maxSize', 'minSize', 'order', 'style']
+    def __init__(self, children=None, id=Component.UNDEFINED, className=Component.UNDEFINED, collapsedSizePixels=Component.UNDEFINED, collapsedSizePercentage=Component.UNDEFINED, collapsible=Component.UNDEFINED, defaultSizePixels=Component.UNDEFINED, defaultSizePercentage=Component.UNDEFINED, minSizePixels=Component.UNDEFINED, minSizePercentage=Component.UNDEFINED, maxSizePixels=Component.UNDEFINED, maxSizePercentage=Component.UNDEFINED, order=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['children', 'id', 'className', 'collapsedSizePercentage', 'collapsedSizePixels', 'collapsible', 'defaultSizePercentage', 'defaultSizePixels', 'maxSizePercentage', 'maxSizePixels', 'minSizePercentage', 'minSizePixels', 'order', 'style']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['children', 'id', 'className', 'collapsedSize', 'collapsible', 'defaultSize', 'maxSize', 'minSize', 'order', 'style']
+        self.available_properties = ['children', 'id', 'className', 'collapsedSizePercentage', 'collapsedSizePixels', 'collapsible', 'defaultSizePercentage', 'defaultSizePixels', 'maxSizePercentage', 'maxSizePixels', 'minSizePercentage', 'minSizePixels', 'order', 'style']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
