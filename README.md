@@ -1,10 +1,11 @@
 # Dash Resizable Panels
 
-This module provides a Dash component for creating resizable panels. It is based on the `react-resizable-panels` React component.
+This module provides a Dash component for creating resizable panels. It is based on the 
+[`react-resizable-panels`](https://github.com/bvaughn/react-resizable-panels) React component.
 
 ## Usage
 
-Here's an two split panels example:
+Here's a two split panels example:
 
 ```python
 from dash_resizable_panels import PanelGroup, Panel, PanelResizeHandle
@@ -19,14 +20,14 @@ app.layout = html.Div([
             Panel(
                 id='panel-1',
                 children=[
-                    html.Div('Panel 1')
+                    html.H1('Black')
                 ],
             ),
-            PanelResizeHandle(html.Div(' ', style={"backgroundColor": "grey", "height": "100%", "width": "5px"})),
+            PanelResizeHandle(html.Div(style={"backgroundColor": "grey", "height": "100%", "width": "5px"})),
             Panel(
                 id='panel-2',
                 children=[
-                    html.Div('Panel 3')
+                    html.H1('White')
                 ],
                 style={"backgroundColor": "black", "color": "white"}
             )
@@ -53,3 +54,7 @@ Look in to `usage.py` for a nested panels example.
 pip install dash-resizable-panels
 ```
 
+## Sponsor
+
+If you like this project and want to support it, please consider becoming a sponsor of the parent project
+[`react-resizable-panels`](https://github.com/bvaughn/react-resizable-panels) by [Brian Vaughn](https://github.com/sponsors/bvaughn/)
