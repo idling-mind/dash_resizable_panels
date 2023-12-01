@@ -1,6 +1,6 @@
 {
   "name": "dash_resizable_panels",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Dash component for resizable panel groups/layouts",
   "main": "build/index.js",
   "scripts": {
