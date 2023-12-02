@@ -63,7 +63,7 @@ pip install dash-resizable-panels
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
 | id | The ID used to identify this component in Dash callbacks | string | |
-| children | The children of this component | Dash components | |
+| children | The children of this component. (Should be of the type Panel/PanelResizeHandle) | Dash components | |
 | direction | The direction of the panels. Can be either `horizontal` or `vertical` | string | `horizontal` |
 | className | The class name of the component | string | |
 | style | The style of the component | dict | |
@@ -75,7 +75,7 @@ pip install dash-resizable-panels
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
 | id | The ID used to identify this component in Dash callbacks | string | |
-| children | The children of this component | Dash components | |
+| children | The children of this component. (Any dash component) | Dash components | |
 | className | The class name of the component | string | |
 | defaultSizePixels | The default size of the panel in pixels | int | `0` |
 | defaultSizePercentage | The default size of the panel as a percentage of the parent panel group | int | `0` |
@@ -94,7 +94,7 @@ pip install dash-resizable-panels
 | Attribute | Description | Type | Default |
 | --- | --- | --- | --- |
 | id | The ID used to identify this component in Dash callbacks | string | |
-| children | The children of this component | Dash components | |
+| children | The children of this component. This will become the handle for resizing. | Dash components | |
 | className | The class name of the component | string | |
 | style | The style of the component | dict | |
 | disable | Whether the resize handle is disabled | bool | `False` |
