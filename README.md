@@ -1,6 +1,6 @@
 # Dash Resizable Panels
 
-![dash_resizable_handles] (./assets/dash_resizable_panels.gif)
+![dash_resizable_handles] (https://raw.githubusercontent.com/idling-mind/dash_resizable_panels/main/assets/dash_resizable_panels.gif)
 
 This module provides a Dash component for creating resizable panels. It is based on the 
 [`react-resizable-panels`](https://github.com/bvaughn/react-resizable-panels) React component.
