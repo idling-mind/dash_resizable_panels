@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #77a9e2 0%, #558ab3 100%);
+    color: lightgray;
+}
+.container {
+    height: 100vh;
+}
+.resize-handle-horizontal {
+    width: 5px;
+    height: 100%;
+    background-color: lightgray;
+}
+.resize-handle-vertical {
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+}
+.resize-handle-horizontal:hover,.resize-handle-vertical:hover {
+    background-color: gray;
+}
+[data-panel] {
+    font-size: 50px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
